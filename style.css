@@ -1,0 +1,13 @@
+body {
+  margin: 20px;
+  background: black;
+  color: RGB(15, 242, 75);
+}
+h2{
+  font-family:'Verdana';
+  font-size:30px;
+}
+p{
+  font-family:'times';
+  font-size:20;
+}
