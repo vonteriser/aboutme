@@ -3,117 +3,174 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vaibhav Vir Aasliya | About Me</title>
+    <meta name="description" content="Personal website showcasing Vaibhav Vir Aasliya's coding skills">
+    <title>Vaibhav Vir Aasliya - Developer Portfolio</title>
     <style>
+        /* General Dark Mode with Gradient Background */
         body {
-            font-family: 'Arial', sans-serif;
-            color: white;
-            background-color: black;
+            font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
+            background: linear-gradient(135deg, #0d1117 0%, #161b22 100%);
+            color: #c9d1d9;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
         }
-        header {
-            background-color: #4CAF50;
-            color: white;
+
+        /* Glowing effect for your name */
+        h1 {
+            font-size: 4rem;
+            color: #fff;
             text-align: center;
-            padding: 2rem 0;
+            text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff;
         }
-        nav {
-            background-color: #333;
-            padding: 1rem;
+
+        /* Navigation */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 20px;
             text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
         }
         nav a {
             color: white;
             text-decoration: none;
-            padding: 1rem;
-            margin: 0 0.5rem;
+            font-weight: bold;
+            padding: 8px 20px;
+            border-radius: 20px;
+            transition: background-color 0.3s ease-in-out;
         }
-        section {
-            padding: 2rem;
-            max-width: 1200px;
-            margin: auto;
-        }
-        h1 {
-            font-size:50px
-      }
-        p {
-            line-height: 1.6;
-        }
-      p,h2{
-       font-size:20px;
-      }
-/* Glowing effect for your name */
-h1 {
-    font-size: 4rem;
-    color: #fff;
-    text-align: center;
-    text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff;
-}
-
-/* Highlight for the skills section */
-#skills {
-    background-color: #0d1117;
-    border: 2px solid #1f6feb;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(31, 111, 235, 0.5);
-}
-
-#skills h2 {
-    color: #58a6ff;
-}
-        .highlight {
-            background-color: green;
-            padding: 1rem;
-            border-left: 5px solid #4CAF50;
-            font-size:20px;
-        }
-        footer {
-            text-align: center;
-            padding: 1rem;
-            background-color: #333;
+        nav a:hover {
+            background-color: #1f6feb;
             color: white;
-            width: 100%;
-            bottom: 0;
+        }
+
+        /* Skills Section Highlight */
+        #skills {
+            background-color: #161b22;
+            border: 2px solid #1f6feb;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(31, 111, 235, 0.5);
+        }
+        #skills h2 {
+            color: #58a6ff;
+        }
+
+        /* Smooth Section Panning & Hover Lift */
+        section {
+            margin-bottom: 80px;
+            padding: 60px;
+        }
+        section:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 35px rgba(31, 111, 235, 0.4);
+        }
+
+        /* Button Styling with Hover Effect */
+        button {
+            background-color: #1f6feb;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #58a6ff;
+            box-shadow: 0 4px 10px rgba(31, 111, 235, 0.3);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #161b22;
+            color: #8b949e;
+            text-align: center;
+            padding: 20px;
+        }
+        footer a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Custom Cursor */
+        body {
+            cursor: url('custom-cursor.png'), auto; /* Replace with your cursor image */
         }
     </style>
 </head>
 <body>
+
+    <!-- Header -->
     <header>
         <h1>Vaibhav Vir Aasliya</h1>
-        <p>Class 9 | CCA School</p>
+        <p>Developer | Designer | Problem Solver</p>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#grades">Grades</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    
-    <nav>
-        <a href="#about">About Me</a>
-        <a href="#achievements">Achievements</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-    </nav>
-    
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hello! I am Vaibhav Vir Aasliya, a Class 9 student at CCA School. I have a deep passion for computers, science, and math. I love exploring new ideas and creating innovative projects.</p>
-    </section>
-    
-    <section id="achievements">
-        <h2>Achievements</h2>
-        <div class="highlight">
-            <p>Scored 91.11% in the half term examinations.</p>
-            <p>1st place in the Math Marathon</p>
-        </div>
-    </section>
-    <section id="skills">
-    <h2>Skills</h2>
-    <div class="highlights">
-    <p>basics of html</p>
-    <p>basics of c++</p>
-    <p>intermediatory in python</p>
+
+    <!-- Main Container -->
+    <div class="container">
+
+        <!-- About Me Section -->
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <p>Hello! I'm Vaibhav Vir Aasliya, a passionate developer with a knack for solving complex problems and building modern web applications.</p>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML & CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>React.js</li>
+                <li>Node.js</li>
+            </ul>
+        </section>
+
+        <!-- Grades Section -->
+        <section id="grades" class="grades">
+            <h2>Grades</h2>
+            <div class="grades-container">
+                <div class="grade-card">
+                    <h3>Mathematics</h3>
+                    <p class="grade">A+</p>
+                </div>
+                <div class="grade-card">
+                    <h3>Computer Science</h3>
+                    <p class="grade">A</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <h2>Contact Me</h2>
+            <p>Reach me at <a href="mailto:vaibhav@example.com">vaibhav@example.com</a></p>
+            <button>Get in Touch</button>
+        </section>
     </div>
-    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>Connect with me at: vaibhav@example.com</p>
+        <p>&copy; 2024 Vaibhav Vir Aasliya. All Rights Reserved. | <a href="mailto:vaibhav@example.com">Email Me</a></p>
     </footer>
+
 </body>
 </html>
